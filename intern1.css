@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding:60px 100px;
+}
+main{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.box{
+    position: relative;
+    /* width: 415px; */
+    margin: 15px 15px 20px;
+    padding: 5rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1),
+    -1px -1px 10px rgba(0, 0, 0, 0.1);
+   
+}
+.intro{
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    word-wrap: break-word;
+    background-image: linear-gradient(to right,#ba002b,#42CAF3);
+    padding: 5rem 3rem;
+    overflow: hidden;
+    
+}
+.lorem{
+    margin-bottom: 30px;
+    color: rgb(143, 141, 141);
+}
+.frontend_title{
+    margin-bottom:0.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.getstarted{
+    color: rgb(217, 18, 52);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    transform: translateY(-50%);
+    display: flex;
+   justify-content: center;
+    align-items: center;
+   font-size: 30px;
+   border-radius: 50%;
+   color: white;
+   background-image: linear-gradient(to bottom,#ba002b,#42CAF3);
+}
+@media  screen and (max-width:1200px){
+
+    main{
+        grid-template-columns:auto auto;
+    }
+}
+@media  screen and (max-width:900px){
+
+    main{
+        grid-template-columns:auto;
+    }
+}
+@media  screen and (max-width:600px){
+   
+   
+body{
+    padding:10px 10px;
+}
+}
